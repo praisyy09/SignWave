@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SignWave</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./varsh.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='./styleh.css')}}">
+  
+  <script>
+    function runScript() {
+        fetch('/run_script')
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert(data.message); // Show success message or implement further logic
+                } else {
+                    alert('Error: ' + data.message); // Show error message
+                }
+            });
+    }
+</script>
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <div class="background-wrapper">
+        <div
+          class="_66303513-e-76-c-9555-d-5583-af-6-seperator-20-bottom-svg-fill"
+        >
+          <div class="_66303513-e-76-c-9555-d-5583-af-6-seperator-20-bottom-svg">
+            <img class="clip-path-group" src="static/clip-path-group0.svg" />
+          </div>
+        </div>
+        <img
+          class="_66303513-e-76-c-9555-d-5583-af-5-hero-2520-pattern-p-1600-png"
+          src="static/_66303513-e-76-c-9555-d-5583-af-5-hero-2520-pattern-p-1600-png0.png"
+        />
+        <div class="background">
+          <div
+            class="_66303513-e-76-c-9555-d-5583-af-7-seperator-20-top-svg-fill"
+          >
+            
+            <div class="input">
+              <a href="login.html" class="btn-link">
+              <div class="get-started-it-s-free">Get Started</div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="heading-1">
+        <div class="bridging-worlds-with-sign-wave">
+          Bridging Worlds with SignWave
+        </div>
+      </div>
+      <div class="container2">
+        <div
+          class="sign-wave-is-your-go-to-ai-tool-for-effortless-communication-across-languages-convert-audio-text-to-indian-sign-language-isl-and-vice-versa-in-an-instant-whether-you-re-signing-or-speaking-sign-wave-makes-it-simple-to-connect-understand-and-communicate-inclusively-experience-the-power-of-technology-in-bridging-communication-gaps"
+        >
+          SignWave is your go-to AI tool for effortless communication across
+          languages. Convert audio/text to Indian Sign Language (ISL) and vice
+          versa in an instant. Whether you&#039;re signing or speaking, SignWave
+          makes it simple to connect, understand, and communicate inclusively.
+          Experience the power of technology in bridging communication gaps.
+        </div>
+      </div>
+      <img
+        class="_66303513-e-76-c-9555-d-5583-b-3-b-header-20-gradient-png"
+        src="static/_66303513-e-76-c-9555-d-5583-b-3-b-header-20-gradient-png0.png"
+      />
+      <div
+        class="_66303513-e-76-c-9555-d-5583-b-3-d-character-20-shadow-png"
+        style="
+          background: url(static/_66303513-e-76-c-9555-d-5583-b-3-d-character-20-shadow-png0.png)
+            center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <img
+          class="output-7-removebg-preview-1"
+          src="static/output-7-removebg-preview-10.png"
+        />
+      </div>
+    </div>
+    <div id ="section2" class="section2">
+      <div class="container3">
+        <div class="heading-2">
+          <div class="explore-our-features">Explore Our Features</div>
+        </div>
+        <div
+          class="our-innovative-tool-bridges-communication-gaps-enhancing-accessibility-and-understanding-in-real-time-transactions"
+        >
+          Our innovative tool bridges communication gaps, enhancing accessibility
+          and understanding in real-time transactions.
+        </div>
+      </div>
+      <img
+        class="_66303513-e-76-c-9555-d-5583-b-48-gradient-png"
+        src="static/_66303513-e-76-c-9555-d-5583-b-48-gradient-png0.png"
+      />
+      <div class="background-shadow">
+        <div class="section3">
+          <div
+            class="background2"
+            style="
+              background: url(static/background1.png) center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="svg">
+              <img class="group" src="static/group0.svg" />
+            </div>
+          </div>
+          <div class="audio-to-sign-language">Sign to Text & Speech</div>
+          <div class="convert-spoken-words-into-indian-sign-language-gestures">
+            Sign in front of the camera, and we’ll take care of the rest.
+          </div>
+          <div
+            class="background3"
+            style="
+              background: url(static/background2.png) center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="svg">
+              <img class="group2" src="static/group1.svg" />
+            </div>
+          </div>
+          
+          <div class="text-to-sign-language">English to ISL</div>
+          <div class="translate-written-text-into-indian-sign-language">
+            See your words signed by an animated avatar.
+          </div>
+          <div
+            class="background4"
+            style="
+              background: url(static/background3.png) center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="svg">
+              <img class="group3" src="static/group2.svg" />
+            </div>
+          </div>
+          <div class="sign-language-to-text"> Hindi to ISL</div>
+          <div class="instantly-convert-sign-language-into-written-text">
+            Convert Hindi text or speech into Indian Sign Language
+          </div>
+          <div
+            class="background5"
+            style="
+              background: url(static/background4.png) center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="svg">
+              <img class="group4" src="static/group3.svg" />
+            </div>
+          </div>
+            <div class="sign-language-to-audio">Sign to Audio</div>
+            <div class="convert-sign-language-gestures-into-spoken-words">
+              Make your signs heard, bridging the communication gap.
+            </div>
+        
+          <div id ="container4" class="container4">
+            <img
+              class="_66303513-e-76-c-9555-d-5583-af-3-element-2015-png"
+              src="static/_66303513-e-76-c-9555-d-5583-af-3-element-2015-png0.png"
+            />
+            <div class="heading-4-grow-your-business-to-the-next-level">
+              Our Services
+            </div>
+          </div>
+        </div>
+        <!--<div class="background6">
+          <div class="output-9-1"></div>
+          <img
+            class="output-8-removebg-preview-1"
+            src="static/output-8-removebg-preview-10.png"
+          />
+        </div>-->
+        <div class="heading-3">
+          <div class="sign-to-text-audio">Live Sign to Text & Audio</div>
+        </div>
+        <div
+          class="translate-indian-sign-language-gestures-into-clear-text-or-audio-instantly"
+        >
+        Show your signs on live video, and we’ll turn them into text. Need audio? We can convert the text to speech too!
+        </div>
+        
+        
+        <div class="link" onclick="runScript()">
+          <div class="translate-to-text-audio">Start Live Sign Translation</div>
+      </div>
+        
+      
+      </div>
+      
+      </div>
+
+
+
+      <div class="background-shadow-left">
+        <div class="heading-32">
+          <div class="text-audio-to-sign"> Hindi Text/Audio to Sign Language</div>
+        </div>
+        <div
+          class="easily-transform-text-or-audio-into-indian-sign-language-animations-for-better-communication"
+        >
+        Type or speak in Hindi, and watch the avatar sign in Indian Sign Language.
+        </div>
+        
+        <div class="link2">
+          <a href={{ url_for('index') }} class="btn-link">
+          <div class="convert-to-sign-language"> Translate to Sign Language</div>
+        </a>
+        
+        </div>
+        <div class="section3">
+            
+            
+    
+            
+        </div>
+    </div>
+    
+    
+      <div class="background-shadow2">
+        <!--<div class="background7">
+          <img
+            class="output-8-removebg-preview-2"
+            src="static/output-8-removebg-preview-20.png"
+          />
+        </div>-->
+        <div class="heading-32">
+          <div class="text-audio-to-sign">English Text/Audio to Sign Language</div>
+        </div>
+        <div
+          class="easily-transform-text-or-audio-into-indian-sign-language-animations-for-better-communication"
+        >
+        Type or speak in English, and see an animated avatar show the signs in Indian Sign Language.
+        </div>
+        
+        <div class="link2">
+          <a href={{ url_for('index') }} class="btn-link">
+          <div class="convert-to-sign-language">Translate to Sign Language</div>
+        </a>
+        
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="background-shadow2">
+        <!--<div class="background7">
+          <img
+            class="output-8-removebg-preview-2"
+            src="static/output-8-removebg-preview-20.png"
+          />
+        </div>-->
+        
+        
+        
+        
+      </a>
+      </div>
+    </div>
+    <div class="container5"></div>
+    <div class="banner">
+      <div class="container6">
+        <div class="link-home">
+          <div class="_66303513-e-76-c-9555-d-5583-af-2-logo-svg">
+            <div class="_66303513-e-76-c-9555-d-5583-af-2-logo-svg-fill">
+              <div class="_66303513-e-76-c-9555-d-5583-af-2-logo-svg2">
+                <img class="clip-path-group3" src="static/clip-path-group2.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="sign-wave">SignWave</div>
+        </div>
+        
+        <div class="link3">
+          <a href="{{ url_for('signup') }}" class="btn-link">
+
+          
+          <div class="try-for-free">Sign In</div>
+        </a>
+        </div>
+        <div class="navigation">
+          <div class="link4">
+            <div class="home">Home</div>
+          </div>
+          <div class="link5">
+          <a href="#section2" class="feature">Feature</a>
+        </div>
+          
+          <div class="link6">
+            <a href="#container4" class="services">Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section4"
+      style="
+        background: url(static/section3.png) center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black
+      "
+    >
+      <img
+        class="_66303513-e-76-c-9555-d-5583-b-18-cta-20-logo-png"
+        src="static/_66303513-e-76-c-9555-d-5583-b-18-cta-20-logo-png0.png"
+      />
+      <div class="heading-3-get-started-with-otake">
+        Get Started With SignWave.
+      </div>
+      <div
+        class="explore-a-new-realm-of-efficiency-and-success-with-our-cutting-edge-saa-s"
+      >
+        Explore a new realm of efficiency and success with our cutting-edge SaaS.
+      </div>
+      <a href="{{ url_for('signup') }}" class="btn-link" >
+      <div class="link7">
+        <div class="get-started">Get Started</div>
+      </div>
+    </a>
+    </div>
+    <div
+      class="section5"
+      style="
+        background: url(static/section3.png) center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: black
+      "
+    >
+      <div class="container7">
+        <div
+          class="sign-wave-is-an-ai-powered-platform-dedicated-to-bridging-communication-gaps-between-individuals-with-hearing-speech-and-other-impairments-and-the-wider-community-our-mission-is-to-create-an-inclusive-environment-by-offering-seamless-translation-between-audio-text-and-indian-sign-language-isl-with-cutting-edge-technology-and-user-friendly-features-we-empower-everyone-to-communicate-without-barriers-let-s-connect-the-world-one-sign-at-a-time"
+        >
+          SignWave is an AI-powered platform dedicated to bridging communication
+          gaps between individuals with hearing, speech, and other impairments and
+          the wider community. Our mission is to create an inclusive environment
+          by offering seamless translation between audio, text, and Indian Sign
+          Language (ISL). With cutting-edge technology and user-friendly features,
+          we empower everyone to communicate without barriers.
+          <br />
+          Let’s connect the world, one sign at a time.
+        </div>
+        <div class="container8"></div>
+        <img class="horizontal-divider" src="static/horizontal-divider0.svg" />
+        <div
+          class="powered-by-a-passionate-team-dedicated-to-inclusivity-and-innovation"
+        >
+          Powered by a passionate team dedicated to inclusivity and innovation.
+        </div>
+        <div class="container9">
+          <div class="link8">
+            <img class="svg2" src="static/svg4.svg" />
+          </div>
+          <div class="link9">
+            <img class="svg3" src="static/svg5.svg" />
+          </div>
+          <div class="link10">
+            <img class="svg4" src="static/svg6.svg" />
+          </div>
+          <div class="link11">
+            <img class="svg5" src="static/svg7.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="about-sign-wave">About SignWave</div>
+    </div>
+  </div>
+  
+</body>
+</html>

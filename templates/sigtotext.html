@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./styles.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>SignWave</title>
+</head>
+<body>
+  <div class="body">
+    <div class="container">
+      <div class="section">
+        <div class="container2">
+          <img
+            class="_66303513-e-76-c-9555-d-5583-b-1-e-about-2520-pattern-p-1600-png"
+            src="sig1.png"
+          />
+          <div class="section2">
+            <div class="container3">
+              <div class="heading-3-our-growth-journey">
+                Convert Sign Language to Text or Audio
+              </div>
+              <div
+                class="upload-a-video-of-sign-language-or-use-your-webcam-to-capture-gestures-live-sign-wave-will-instantly-translate-it-into-text-or-audio-for-seamless-communication"
+              >
+                Upload a video of sign language or use your webcam to capture
+                gestures live. SignWave will instantly translate it into text or
+                audio for seamless communication.
+              </div>
+            </div>
+            <img
+              class="_66303513-e-76-c-9555-d-5583-b-45-contact-20-gradient-png"
+              src="sig2.png"
+            />
+            <div class="background-shadow">
+              <div class="upload-sign-language-video">
+                Upload Sign Language Video
+              </div>
+              <div class="input">
+                <a href="#background-shadow2" class="translate-to-text-audio">Translate to Text/Audio</a>
+                
+              </div>
+              <div class="input2">
+                <div class="container4">
+                  <div class="click-here-to-open-files">
+                    Click here to open files
+                  </div>
+                </div>
+                
+
+                
+                
+                <div class="input3">
+                  <label for="video-upload" class="video-upload">Video Upload</label>
+                  <input type="file" id="video-upload" accept="video/*" style="display: none;" />
+                </div>
+                
+              </div>
+              
+
+              <img class="camera" src="camera0s.svg" alt="Camera Icon" />
+<video id="video" width="320" height="240" autoplay></video>
+<script>
+  document.querySelector('.camera').addEventListener('click', function() {
+    // Access the user's webcam
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        // Show the video element
+        document.getElementById('video').style.display = 'block';
+        
+        // Set the source of the video element to the webcam stream
+        const video = document.getElementById('video');
+        video.srcObject = stream;
+      })
+      .catch(function(err) {
+        console.log("Error accessing webcam: " + err);
+      });
+  });
+  
+</script>
+
+            </div>
+            <div class="click-to-start-live-capture">
+              Click to start Live Capture
+            </div>
+            <div class="or">Or</div>
+          </div>
+        </div>
+      </div>
+      <div class="background-shadow2">
+        <div class="translated-text-will-appear-here">
+          <span>
+            <span class="translated-text-will-appear-here-span">
+              Translated text will
+            </span>
+            <span class="translated-text-will-appear-here-span2">appear</span>
+            <span class="translated-text-will-appear-here-span3">here.</span>
+          </span>
+        </div>
+        <div class="input4">
+          <div class="play-audio">Play Audio</div>
+        </div>
+      </div>
+      <div class="section3"></div>
+      <div class="banner"></div>
+    </div>
+    <div class="container5">
+      <div class="link-home">
+        <div class="_66303513-e-76-c-9555-d-5583-af-2-logo-svg">
+          <div class="_66303513-e-76-c-9555-d-5583-af-2-logo-svg-fill">
+            <div class="_66303513-e-76-c-9555-d-5583-af-2-logo-svg2">
+              <img class="clip-path-group" src="clip-path-group0s.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="sign-wave">SignWave</div>
+      </div>
+    
+      
+      <div class="navigation">
+        <a href="../Home.html" class="btn-link">
+        <div class="link2">
+          <div class="home">Home</div>
+        </div>
+        </a>
+        <a href="../Home.html#section2" class="btn-link">
+        <div class="link3"></div>
+        <div class="feature">Feature</div>
+      </a>
+      <a href="../Home.html#container4" class="btn-link">
+        <div class="services">Services</div>
+        <div class="link4"></div>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

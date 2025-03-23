@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpeakEasy</title>
+<link rel="stylesheet" href="{% static 'home style.css' %}">
+</head>
+<body>
+
+  {% if user.is_authenticated %}
+  <div class="menu-bar">
+    <h1 class="logo">Speak<span>Easy</span></h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Features<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <ul>
+                
+              <li><a href="{% url 'voice-to-text' %}">Voice to Text</a></li>
+              <li><a href="{% url 'text-to-voice' %}">Text to Voice</a></li>
+              <li><a href="{% url 'gesture-to-text' %}">Gesture to Text</a></li>
+              <li><a href="{% url 'notepad' %}">Notepad</a></li>
+              </ul>
+              <li><a href="#">              <i class="fas fa-caret-down"></i></a>
+              <li><a href="#">              <i class="fas fa-caret-down"></i></a>
+          </div>
+      </li>
+    </ul>
+  </div>
+<section>
+  
+  <div class="text">
+  <h1>Welcome to Our Website</h1>
+  <h2>Explore and Discover</h2>
+  </div>
+</section>
+
+<div class="wrapper2">
+  <img class="imagee2" src="{% static 'pic1.jpg' %}" alt="Image2" width="300px" height="300">
+  <div class="text2">
+    <h1 class="anything"><a href="{% url 'gesture-to-text' %}">Gesture to Text</a></h1>
+    <p>Converts gesture recording into voice by using deep learning</p>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="text">
+    <h1 class="anything"><a href="{% url 'text-to-voice' %}">Text to Voice</a></h1>
+    <p>Converts gesture recording into voice by using deep learning</p>
+  </div>
+  <img class="imagee" src="{% static 'pic2.jpg' %}" alt="Image2" width="300px">
+</div>
+
+<div class="wrapper2">
+  <img class="imagee2" src="{% static 'pic1.jpg' %}" alt="Image2" width="300px" height="300">
+  <div class="text2">
+    <h1 class="anything"><a href="{% url 'voice-to-text' %}">Voice to Text</a></h1>
+    <p>Converts gesture recording into voice by using deep learning</p>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="text">
+    <h1 class="anything"><a href="{% url 'notepad' %}">Notepad</a></h1>
+    <p>Use it to make notes</p>
+  </div>
+  <img class="imagee" src="{% static 'pic3.jpg' %}" alt="Image2" width="300px">
+</div>
+ {% else %}
+ <p>You are not logged in</p>
+ {%endif%}
+</body>
+</html>
+
+
+

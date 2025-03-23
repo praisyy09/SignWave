@@ -1,0 +1,78 @@
+{% extends "main.html" %}
+{%load static%}
+
+{% block title %}
+  <title>Text to Voice</title>
+  <link rel="stylesheet" href="{% static 'texttovoice.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Text to Speech Conversion</h1>
+
+<textarea id="text-to-convert" rows="4" cols="50"></textarea><br>
+<input type="file" id="file-input" accept=".txt"><br>
+
+<button onclick="speak()">Speak</button>
+<button onclick="stopSpeaking()">Stop Speaking</button> <!-- New Stop Speaking button -->
+<button onclick="downloadSpeech()">Download Speech</button>
+
+<script>
+// Function to convert text to speech
+function speak() {
+  var text = document.getElementById("text-to-convert").value;
+  if (text.trim() !== "") {
+    var speechSynthesis = window.speechSynthesis;
+    var speechUtterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(speechUtterance);
+  } else {
+    alert("Please enter some text or load a text file.");
+  }
+}
+
+// Function to stop speaking
+function stopSpeaking() {
+  window.speechSynthesis.cancel();  // This stops any ongoing speech
+}
+
+// Function to load text from a file into the textarea
+function loadFile() {
+  var fileInput = document.getElementById('file-input');
+  var file = fileInput.files[0];
+
+  if (file) {
+    var reader = new FileReader();
+    reader.onload = function(event) {
+      var text = event.target.result;
+      document.getElementById('text-to-convert').value = text;
+    };
+    reader.readAsText(file);
+  } else {
+    alert("No file selected.");
+  }
+}
+
+// Add event listener to file input to trigger loadFile function when a file is selected
+document.getElementById('file-input').addEventListener('change', loadFile);
+
+// Function to download the entered text as a .txt file
+function downloadSpeech() {
+  var text = document.getElementById("text-to-convert").value;
+  if (text.trim() !== "") {
+    var blob = new Blob([text], { type: 'text/plain' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'speech.mp4';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } else {
+    alert("Please enter some text or load a text file.");
+  }
+}
+</script>
+{% endblock %}
+
+
+

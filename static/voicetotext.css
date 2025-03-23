@@ -1,0 +1,76 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+    form {
+            max-width: 500px;
+            position: relative;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#fcf8f8;
+    border-width: 5px;
+    color:#0a0a0a;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    h2 {
+            text-align: center;
+            color: #ffffff;
+    }
+    #container {
+        max-width: 600px;
+        margin: auto;
+    }
+    #output {
+        margin: 20px;
+        border: 1px solid #f7f3f3;
+        padding: 10px;
+        min-height: 100px;
+        background-color: #fff;
+    }
+    #status {
+        margin-top: 10px;
+        font-style: italic;
+    }
+    .audio_upload { 
+	background-color: #51700f;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -46%);
+	padding-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+    border-color:#0a0a0a;
+    border-width: 5px;
+    color:#ece6e6;
+    box-shadow:-10px -10px 9px #26431f;
+}
+button{
+  margin: 10px;
+  margin-left: 40PX;
+
+}

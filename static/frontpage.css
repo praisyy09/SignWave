@@ -1,0 +1,164 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333; /* Main text color */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.signup-btn,
+.login-btn {
+    padding: 8px 16px; /* Adjusted button padding for better appearance */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.signup-btn {
+    background-color: #007BFF; /* Blue */
+    color: #fff;
+}
+
+.login-btn {
+    background-color: #28a745; /* Green */
+    color: #fff;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    background: url('{% static "myapp/hero_image.jpg" %}') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #eee; /* Light gray text */
+}
+
+.cta-btn {
+    padding: 12px 24px; /* Larger button padding */
+    background-color: #ff5e3a; /* Orange */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff3300; /* Darker orange on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+    background-color: #fff; /* White background for sections */
+    color: #333; /* Dark text */
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark text */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional Styling for Links */
+a {
+    color: #007BFF; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+}

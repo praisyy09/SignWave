@@ -1,0 +1,299 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{%static 'home style.css'%}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gesture to Voice</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <h1 class="logo">Speak<span>Eazy</span></h1>
+        <ul class="hello">
+          <li><a href="{% url 'SpeakEazy'%}">Home</a></li>
+          <li><a href="#">Features<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="{% url 'voice-to-text' %}">Voice to Text</a></li>
+                    <li><a href="{% url 'text-to-voice' %}">Text to Voice</a></li>
+                    <li><a href="{% url 'gesture-to-text' %}">Gesture to Text</a></li>
+                    <li><a href="{% url 'gesture-to-voice' %}">Gesture to Voice</a></li>
+                
+                  </ul>
+                </div>
+          </li>
+        </li>
+
+      </ul>
+        </ul>
+      </div>
+  
+    <div class="video_upload">
+        <h1>Gesture to Voice</h1>
+    <form id="uploadForm">
+        <label for="videoUpload">Upload Video:</label>
+        <input type="file" id="videoUpload" accept="video/*" required>
+        <button type="submit">Convert</button>
+    </form>
+    <br>
+    <a id="downloadLink" style="display: none;" download="converted_voice.mp3">
+        <button id="downloadButton" style="display: none;">Download Voice</button>
+    </a>
+</div>
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var videoFile = document.getElementById('videoUpload').files[0];
+            if (!videoFile) {
+                alert("Please select a video file.");
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append('video', videoFile);
+
+            fetch('/convert', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error converting video.');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                var downloadLink = document.getElementById('downloadLink');
+                var downloadButton = document.getElementById('downloadButton');
+                downloadLink.href = URL.createObjectURL(blob);
+                downloadButton.style.display = 'block';
+                downloadLink.style.display = 'block';
+            })
+            .catch(error => {
+                alert(error.message);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<style>
+.video_upload { 
+	background-color: #2e39b4;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -46%);
+	padding-top: 10px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+    border-color:#0a0a0a;
+    border-width: 5px;
+    color:#0a0a0a;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D1E2C4;
+  }
+  .menu-bar {
+    background-color: #51700f;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .menu-bar h1{
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .logo {
+  color: #000000;
+  font-size: 30px;
+}
+.logo span {
+  color: #000000;
+}
+  .menu-bar h1{
+    margin-left: 20px;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+    position: relative;
+  }
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: #D1E2C4;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color: #1c3807;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+    border-radius: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #819f42;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+    h1 {
+        text-align: center;
+        color: #ffffff;
+            
+    }
+    form {
+            max-width: 500px;
+            
+            position: relative;
+            margin-top: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+    border-color:#0a0a0a;
+    border-width: 5px;
+    color:#0a0a0a;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #51700f;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #293909;
+        }
+        a {
+            display: block;
+            text-align: center;
+           
+            text-decoration: none;
+        }
+        #downloadButton {
+            background-color: #28a745;
+        }
+        #downloadButton:hover {
+            background-color: #218838;
+        }
+
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+
+  .menu-bar {
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .menu-bar h1{
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .logo {
+  color: #000000;
+  font-size: 30px;
+}
+.logo span {
+  color: #2e39b4;
+}
+  .menu-bar h1{
+    margin-left: 20px;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+    position: relative;
+  }
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color: #2e39b4;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+    border-radius: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+    </style>
+</body>
+</html>

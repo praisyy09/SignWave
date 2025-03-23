@@ -1,0 +1,37 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %}{% endblock %}
+{% if include_link %}<link rel="stylesheet" href="{%static 'home style.css'%}">
+{%endif%}
+</head>
+<body>
+  <div class="menu-bar">
+    <h1 class="logo">Speak<span>Eazy</span></h1>
+    <ul class="hello">
+      <li><a href="{% url 'SpeakEazy'%}">Home</a></li>
+      <li><a href="#">Features<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="{% url 'voice-to-text' %}">Voice to Text</a></li>
+                <li><a href="{% url 'text-to-voice' %}">Text to Voice</a></li>
+                <li><a href="{% url 'gesture-to-text' %}">Gesture to Text</a></li>
+                <li><a href="{% url 'notepad' %}">Notepad</a></li>
+              </ul>
+              <li><a href="#">              <i class="fas fa-caret-down"></i></a>
+              <li><a href="#">              <i class="fas fa-caret-down"></i></a>
+              
+            </div>
+      </li>
+    </li>
+  </ul>
+    </ul>
+  </div>
+  {% block content %}
+  {% endblock %}
+  </body>
+  
+ </html>

@@ -1,0 +1,94 @@
+{%extends "main.html"%}
+{%load static%}
+
+{%block title%}
+    <title>Live Audio to Text</title>
+    <link rel="stylesheet" href="{%static 'voicetotext.css'%}">
+
+{% endblock %}
+{%block content%}
+  <h2>Live Audio to Text Conversion</h2>
+  <button id="startBtn">Start Recording</button>
+  <button id="saveBtn">Save Output</button>
+  <p id="output"></p>
+  
+  <script>
+      if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+        const startBtn = document.getElementById('startBtn');
+        const saveBtn = document.getElementById('saveBtn');
+        const output = document.getElementById('output');
+        let recognition;
+        let isRecording = false;  // Flag to track recording state
+    
+        // Initialize SpeechRecognition object
+        if ('SpeechRecognition' in window) {
+          recognition = new SpeechRecognition();
+        } else {
+          recognition = new webkitSpeechRecognition();
+        }
+    
+        // Set recognition parameters
+        recognition.lang = 'en-US';
+        recognition.continuous = true;
+    
+        // Event handler for when speech recognition starts
+        recognition.onstart = function() {
+          output.textContent = 'Listening...';
+        };
+    
+        // Event handler for when speech is recognized
+        recognition.onresult = function(event) {
+          const transcript = event.results[event.results.length - 1][0].transcript;
+          output.textContent = transcript;
+        };
+    
+        // Event handler for errors
+        recognition.onerror = function(event) {
+          console.error('Speech recognition error:', event.error);
+        };
+    
+        // Event handler for when recognition ends
+        recognition.onend = function() {
+          output.textContent = 'Recognition ended. Click "Start Recording" to start again.';
+          isRecording = false;
+          startBtn.textContent = 'Start Recording';  // Reset button text
+        };
+    
+        // Event listener for the "Start Recording" button
+        startBtn.addEventListener('click', function() {
+          if (isRecording) {
+            recognition.stop();  // Stop recording
+            startBtn.textContent = 'Start Recording';  // Change button text
+            isRecording = false;
+          } else {
+            recognition.start();  // Start recording
+            startBtn.textContent = 'Stop Recording';  // Change button text
+            isRecording = true;
+          }
+        });
+      } else {
+        // Web Speech API not supported
+        output.textContent = 'Speech recognition not supported in this browser.';
+      }
+    
+      const saveBtn = document.getElementById('saveBtn');
+    
+      saveBtn.addEventListener('click', function() {
+        const textToSave = output.textContent;
+        if (textToSave) {
+          const blob = new Blob([textToSave], { type: 'text/plain' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'output.txt';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        } else {
+          alert('No text to save.');
+        }
+      });
+    </script>
+      
+  {%endblock content%}

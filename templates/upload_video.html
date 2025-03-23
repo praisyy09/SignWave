@@ -1,0 +1,46 @@
+{% extends "main.html" %}
+{%load static%}
+<!DOCTYPE html>
+{% block title %}
+    <title>Upload Video</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'upload.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
+{% block content %}
+    <h1>Upload Video for Prediction</h1>
+    <form id="uploadForm" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Upload and Predict</button>
+    </form>
+    
+    <!-- Area to display the prediction result -->
+    <div id="outputText"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#uploadForm').on('submit', function(e) {
+                e.preventDefault(); // Prevent the default form submission
+                
+                // Create a FormData object to handle file upload
+                var formData = new FormData(this);
+                
+                $.ajax({
+                    url: "{% url 'upload_video' %}", // The Django URL for the view
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        // Display the prediction result in the #outputText div
+                        $('#outputText').html("<h2>Prediction: " + response.prediction + "</h2>");
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle errors and display the message
+                        $('#outputText').html("<h2>Error: " + error + "</h2>");
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}

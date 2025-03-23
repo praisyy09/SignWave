@@ -1,0 +1,1202 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
+.container,
+.container * {
+  box-sizing: border-box;
+}
+.container {
+  height: 2700px;
+  position: relative;
+  overflow: hidden;
+}
+.section {
+  border-radius: 24px;
+  width: 1424px;
+  height: 622px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 100px;
+  overflow: hidden;
+}
+.background-wrapper {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: hidden;
+}
+._66303513-e-76-c-9555-d-5583-af-6-seperator-20-bottom-svg-fill {
+  width: 1424px;
+  height: 778.38px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+._66303513-e-76-c-9555-d-5583-af-6-seperator-20-bottom-svg {
+  width: 1096px;
+  height: 39px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.clip-path-group {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+._66303513-e-76-c-9555-d-5583-af-5-hero-2520-pattern-p-1600-png {
+  width: 1424px;
+  height: 778.38px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  translate: 0 -50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.background {
+  width: 1424px;
+  height: 778.38px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+._66303513-e-76-c-9555-d-5583-af-7-seperator-20-top-svg-fill {
+  width: 1424px;
+  height: 778.38px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+._66303513-e-76-c-9555-d-5583-af-7-seperator-20-top-svg {
+  width: 1096px;
+  height: 39px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.clip-path-group2 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.input {
+  background: #0d0c10;
+  border-radius: 8px;
+  width: 150px;
+  position: absolute;
+  right: 1056.98px;
+  bottom: 240px;
+  left:17%;
+  top: 500px;
+  overflow: hidden;
+}
+.get-started-it-s-free {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 10px;
+  width: 122.79px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading-1 {
+  width: 560px;
+  height: 134.38px;
+  position: absolute;
+  left: 144px;
+  top: 89px;
+}
+.bridging-worlds-with-sign-wave {
+  color: #0d0c10;
+  text-align: left;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 56px;
+  line-height: 67.2px;
+  letter-spacing: -1.12px;
+  font-weight: 600;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 498.14px;
+  height: 134.19px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container2 {
+  height: 104px;
+  position: absolute;
+  right: 912px;
+  left: 144px;
+  top: 323px;
+}
+.sign-wave-is-your-go-to-ai-tool-for-effortless-communication-across-languages-convert-audio-text-to-indian-sign-language-isl-and-vice-versa-in-an-instant-whether-you-re-signing-or-speaking-sign-wave-makes-it-simple-to-connect-understand-and-communicate-inclusively-experience-the-power-of-technology-in-bridging-communication-gaps {
+  color: #0d0c10;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 7.62px;
+  width: 433px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._66303513-e-76-c-9555-d-5583-b-3-b-header-20-gradient-png {
+  width: 111.94%;
+  height: 1340px;
+  position: absolute;
+  right: -46.77%;
+  left: 34.83%;
+  top: -280.81px;
+  overflow: hidden;
+  object-fit: cover;
+}
+._66303513-e-76-c-9555-d-5583-b-3-d-character-20-shadow-png {
+  opacity: 0.8;
+  width: 990px;
+  height: 990px;
+  position: absolute;
+  left: 505.8px;
+  top: -105.99px;
+  overflow: hidden;
+}
+.output-7-removebg-preview-1 {
+  width: 607px;
+  height: 598px;
+  position: absolute;
+  left: 192.2px;
+  top: 129.99px;
+  
+  object-fit: cover;
+}
+.section2 {
+  width: 1136px;
+  height: 843.97px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 722px;
+}
+.container3 {
+  width: 574px;
+  height: 219.19px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0px;
+}
+.heading-2 {
+  width: 574px;
+  height: 115.19px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 40px;
+}
+.explore-our-features {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 45px;
+  line-height: 57.6px;
+  letter-spacing: -0.48px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: -1px;
+  width: 493.18px;
+  height: 115.59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-innovative-tool-bridges-communication-gaps-enhancing-accessibility-and-understanding-in-real-time-transactions {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 133px;
+  width: 556px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._66303513-e-76-c-9555-d-5583-b-48-gradient-png {
+  opacity: 0.72;
+  width: 1672px;
+  height: 1321px;
+  position: absolute;
+  left: -268px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.background-shadow {
+  background: #ffffff;
+  border-radius: 24px;
+  position: absolute;
+  right: 890px;
+  left: -110px;
+  bottom: 300.97px;
+  top: 223px;
+  box-shadow: 0px 20px 56px 0px rgba(69, 65, 113, 0.16);
+}
+.background-shadow-left {
+  background: #ffffff;
+  border-radius: 24px;
+  position: absolute;
+  right: 192px; /* Increase value to move more left */
+  left: auto;
+  width: 360px; /* Same width */
+  bottom: 1432px;
+  top: 945px;
+  box-shadow: 0px 20px 56px 0px rgba(69, 65, 113, 0.16);
+}
+
+.section3 {
+  width: 1136px;
+  height: 433px;
+  position: absolute;
+  left: 108%;
+  translate: -50%;
+  top: 445px;
+}
+.background2 {
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 58%;
+  top: 195px;
+}
+.svg {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.group {
+  width: 84.38%;
+  height: 84.37%;
+  position: absolute;
+  right: 9.37%;
+  left: 6.25%;
+  bottom: 6.25%;
+  top: 9.37%;
+  overflow: visible;
+}
+.audio-to-sign-language {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  position: absolute;
+  left: calc(73% - 552px);
+  top: 255px;
+  width: 250px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.convert-spoken-words-into-indian-sign-language-gestures {
+  color: #52505f;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(74% - 558px);
+  top: 293px;
+  width: 228.72px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background3 {
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 33%;
+  top: 195px;
+}
+.group2 {
+  width: 81.25%;
+  height: 90.63%;
+  position: absolute;
+  right: 9.38%;
+  left: 9.38%;
+  bottom: 3.12%;
+  top: 6.25%;
+  overflow: visible;
+}
+.text-to-sign-language {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  position: absolute;
+  left: calc(52% - 258px);
+  top: 255px;
+  width: 700px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.translate-written-text-into-indian-sign-language {
+  color: #52505f;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(73% - 259px);
+  top: 290px;
+  width: 228.72px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background4 {
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 86%;
+  top: 195px;
+}
+.group3 {
+  width: 87.39%;
+  height: 68.61%;
+  position: absolute;
+  right: 6.29%;
+  left: 6.32%;
+  bottom: 15.78%;
+  top: 15.61%;
+  overflow: visible;
+}
+.sign-language-to-text {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  position: absolute;
+  left: 88%;
+  translate: -50%;
+  top: 255px;
+  width: 215px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instantly-convert-sign-language-into-written-text {
+  color: #52505f;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 88%;
+  translate: -50%;
+  top: 290px;
+  width: 225px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-1 {
+  position: absolute;
+  inset: 0;
+}
+.background5 {
+  
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 111%;
+  top: 195px;
+}
+.group4 {
+  width: 75.01%;
+  height: 75%;
+  position: absolute;
+  right: 12.49%;
+  left: 12.49%;
+  bottom: 12.5%;
+  top: 12.5%;
+  overflow: visible;
+}
+.sign-language-to-audio {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  position: absolute;
+  left: calc(85% - -329px);
+  translate: -50%;
+  top: 255px;
+  width: 240px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.convert-sign-language-gestures-into-spoken-words {
+  color: #52505f;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(85% - -327px);
+  translate: -50%;
+  top: 290px;
+  width: 228.72px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container4 {
+  width: 574px;
+  height: 192px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 74%;
+  translate: -50%;
+  top: 0px;
+}
+._66303513-e-76-c-9555-d-5583-af-3-element-2015-png {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - 96px);
+  overflow: hidden;
+  object-fit: cover;
+}
+.heading-4-grow-your-business-to-the-next-level {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.32px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 88px;
+  width: 555.92px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background6 {
+  background: #f4f3f8;
+  border-radius: 16px;
+  height: 248px;
+  position: absolute;
+  right: 8px;
+  left: 8px;
+  top: 234px;
+  overflow: hidden;
+}
+.output-9-1 {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+  left: -106px;
+  top: -184.79px;
+}
+.output-8-removebg-preview-1 {
+  width: 256px;
+  height: 243px;
+  position: absolute;
+  left: 48px;
+  top: -6.79px;
+  object-fit: cover;
+}
+.heading-3 {
+  height: 72.78px;
+  position: absolute;
+  right: 28px;
+  left: 28px;
+  top: 19px;
+}
+.sign-to-text-audio {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 28px;
+  line-height: 36.4px;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 13px;
+  width: 293.22px;
+  height: 70.39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.translate-indian-sign-language-gestures-into-clear-text-or-audio-instantly {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 132px;
+  width: 304.99px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  background: #ffffff;
+  border-radius: 8px;
+  height: 36px;
+  position: absolute;
+  right: 28px;
+  left: 28px;
+  top: 218px;
+  box-shadow: 0px 0px 0px 1px rgba(232, 230, 240, 1),
+    0px 1px 1px 0px rgba(13, 12, 16, 0.04);
+  overflow: hidden;
+}
+.translate-to-text-audio {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 10.21px;
+  width: 152px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-shadow2 {
+  background: #ffffff;
+  border-radius: 24px;
+  position: absolute;
+  right: 400px; /* Increased to move left */
+  left: 650px; /* Keep left as auto */
+  width: 360px; /* Adjust as needed */
+  bottom: 1432px;
+  top: 945px;
+  box-shadow: 0px 20px 56px 0px rgba(69, 65, 113, 0.16);
+}
+
+
+.background7 {
+  background: #f4f3f8;
+  border-radius: 16px;
+  height: 248px;
+  position: absolute;
+  right: 8px;
+  left: 8px;
+  top: 233px;
+  overflow: hidden;
+}
+.output-8-removebg-preview-2 {
+  width: 296px;
+  height: 236px;
+  position: absolute;
+  left: 20px;
+  top: 0.21px;
+  object-fit: cover;
+}
+.heading-32 {
+  height: 72.78px;
+  position: absolute;
+  right: 28px;
+  left: 28px;
+  top: 23px;
+}
+.text-audio-to-sign {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 28px;
+  line-height: 36.4px;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 13px;
+  width: 298.54px;
+  height: 70.39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.easily-transform-text-or-audio-into-indian-sign-language-animations-for-better-communication {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 132px;
+  width: 304.99px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link2 {
+  background: #ffffff;
+  border-radius: 8px;
+  height: 36px;
+  position: absolute;
+  right: 28px;
+  left: 28px;
+  top: 218px;
+  box-shadow: 0px 0px 0px 1px rgba(232, 230, 240, 1),
+    0px 1px 1px 0px rgba(13, 12, 16, 0.04);
+  overflow: hidden;
+}
+.convert-to-sign-language {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 10.21px;
+  width: 168px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container5 {
+  width: 1136px;
+  height: 358px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - 1933px);
+}
+.banner {
+  height: 92px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+.container6 {
+  width: 1220px;
+  height: 64px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 28px;
+}
+.link-home {
+  width: 151px;
+  height: 40px;
+  position: absolute;
+  left: 74px;
+  top: calc(50% - 21px);
+}
+._66303513-e-76-c-9555-d-5583-af-2-logo-svg {
+  width: 126px;
+  height: 28px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  translate: 0 -50%;
+  overflow: hidden;
+}
+._66303513-e-76-c-9555-d-5583-af-2-logo-svg-fill {
+  width: 126px;
+  height: 28px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+._66303513-e-76-c-9555-d-5583-af-2-logo-svg2 {
+  width: 126px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: hidden;
+}
+.clip-path-group3 {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.sign-wave {
+  color: #000000;
+  text-align: center;
+  font-family: "BricolageGrotesque-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  right: 0%;
+  left: 19.21%;
+  width: 80.79%;
+  bottom: 10%;
+  top: 10%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in {
+  color: #0d0c10;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 982px;
+  top: 23px;
+  width: 66px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.link3 {
+  background: #0d0c10;
+  border-radius: 8px;
+  width: 121px;
+  height: 36px;
+  position: absolute;
+  left: calc(50% - -448px);
+  top: calc(50% - 19px);
+}
+.try-for-free {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 11px;
+  width: 93px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation {
+  width: 207.8px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.link4 {
+  border-radius: 8px;
+  width: 58.48px;
+  height: 36px;
+  position: absolute;
+  left: calc(50% - 103.9px);
+  top: 50%;
+  translate: 0 -50%;
+}
+.home {
+  color: #222222;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 10px;
+  width: 57px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link5 {
+  border-radius: 8px;
+  width: 64.08px;
+  height: 36px;
+  position: absolute;
+  left: calc(50% - 37.42px);
+  top: 50%;
+  translate: 0 -50%;
+}
+.feature {
+  color: #222222;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -50.1px);
+  top: 11px;
+  width: 76px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services {
+  color: #222222;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -189.1px);
+  top: 9px;
+  width: 83px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link6 {
+  border-radius: 8px;
+  width: 69.23px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - 19px);
+}
+.section4 {
+  background: linear-gradient(to left, #0d0c10, #0d0c10);
+  border-radius: 32px;
+  width: 944px;
+  height: 393.59px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 2074px;
+}
+._66303513-e-76-c-9555-d-5583-b-18-cta-20-logo-png {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - 236.79px);
+  overflow: hidden;
+  object-fit: cover;
+}
+.heading-3-get-started-with-otake {
+  color: #ffffff;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: -0.48px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 113px;
+  width: 647px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore-a-new-realm-of-efficiency-and-success-with-our-cutting-edge-saa-s {
+  color: #c8c6d3;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 179px;
+  width: 567.09px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link7 {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 208.36px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(45% - -93.16px);
+}
+.get-started {
+  color: #0d0c10;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 10.05px;
+  width: 90px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section5 {
+  background: linear-gradient(to left, #0d0c10, #0d0c10);
+  border-radius: 24px;
+  width: 1424px;
+  height: 643px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 2000px;
+  
+}
+.container7 {
+  width: 1136px;
+  height: 828px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+}
+.sign-wave-is-an-ai-powered-platform-dedicated-to-bridging-communication-gaps-between-individuals-with-hearing-speech-and-other-impairments-and-the-wider-community-our-mission-is-to-create-an-inclusive-environment-by-offering-seamless-translation-between-audio-text-and-indian-sign-language-isl-with-cutting-edge-technology-and-user-friendly-features-we-empower-everyone-to-communicate-without-barriers-let-s-connect-the-world-one-sign-at-a-time {
+  color: #878493;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 304px;
+  width: 980px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container8 {
+  width: 280px;
+  position: absolute;
+  left: 405px;
+  bottom: 480px;
+  top: 180px;
+}
+.horizontal-divider {
+  width: 534px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: calc(50% - -51.5px);
+  overflow: visible;
+}
+.powered-by-a-passionate-team-dedicated-to-inclusivity-and-innovation {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 30%;
+  top: 493px;
+  width: 531px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container9 {
+  height: 80px;
+  position: absolute;
+  right: 414px;
+  left: 482px;
+  top: 553px;
+}
+.link8 {
+  width: 28px;
+  position: absolute;
+  left: 0px;
+  bottom: 52px;
+  top: 0px;
+}
+.svg2 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.link9 {
+  width: 28px;
+  position: absolute;
+  left: 40px;
+  bottom: 52px;
+  top: 0px;
+}
+.svg3 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.link10 {
+  width: 28px;
+  position: absolute;
+  left: 80px;
+  bottom: 52px;
+  top: 0px;
+}
+.svg4 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.link11 {
+  width: 28px;
+  position: absolute;
+  left: 120px;
+  bottom: 52px;
+  top: 0px;
+}
+.svg5 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  overflow: visible;
+}
+.about-sign-wave {
+  color: #ffffff;
+  text-align: center;
+  font-family: "BricolageGrotesque-SemiBold", sans-serif;
+  font-size: 48px;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 54px;
+  width: 400px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
