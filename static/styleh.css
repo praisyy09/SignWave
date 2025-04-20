@@ -860,6 +860,15 @@ html {
   left: calc(50% - -448px);
   top: calc(50% - 19px);
 }
+.link34 {
+  background: #0d0c10;
+  border-radius: 8px;
+  width: 121px;
+  height: 36px;
+  position: absolute;
+  left: calc(50% - -390px);
+  top: calc(50% - 19px);
+}
 .try-for-free {
   color: #ffffff;
   text-align: center;
