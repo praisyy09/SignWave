@@ -115,7 +115,9 @@ def signup():
         return redirect(url_for('login'))
     
     return render_template('signup.html')
-
+@app.route('/signin', methods=['GET', 'POST'])
+def signin():
+      return render_template('login.html')
 @app.route('/run_script', methods=['GET'])
 def run_script():
     # Run the final_predict.py script
